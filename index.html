@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteStack</title>
+    <link rel="icon" href="notestack-logo-transparent.png" type="image/icon type">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="bg-dark wrapper">
-        <div class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
+        <!-- start navbar -->
+        <div class="navbar navbar-expand-md bg-primary sticky-top" data-bs-theme="dark">
             <div class="container-lg">
-                <a href="#" class="navbar-brand">NoteStack</a>
+                <img class="logo"src="notestack-logo-transparent.png" alt="notestack-logo">
+                <a href="#" class="navbar-brand me-auto">NoteStack</a>
                 <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,19 +32,43 @@
                     </ul>
                 </div>
             </div>
-        </div> <!--end nav-->
+        </div> <!--end navbar-->
 
         <div class="container-lg">
+            <!-- first-row -->
             <div class="row">
-                <div class="col-7 flex-fill box box-1">
-                    <div class="title-wrapper">
-                        <h1>Recent Entry</h1>
-                        <h6>Sept 7th. 2023</h6>
+                <div class="col-12 main-box">
+                    <div class="main-wrapper">
+                        <h1 id="main-text">NoteStack</h1>
+                        <h3>Your Thoughts, Organized.</h3>
                     </div>
-                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur corporis quaerat voluptatum eos tempora temporibus nisi voluptates sed, exercitationem sequi dolore culpa incidunt accusamus, quasi unde reprehenderit ea molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur corporis quaerat voluptatum eos tempora temporibus nisi voluptates sed, exercitationem sequi dolore culpa incidunt accusamus, quasi unde reprehenderit ea molestias.</h5>
                 </div>
-                <div class="col-4 box box-2">
-                       
+            </div>
+
+            <!-- second-row -->
+            <div class="row">
+                <div class="col-7 box box-1 m-auto">
+                        <div class="title-wrapper">
+                            <h1>Most Recent</h1>
+                            <h6>Sept. 7th 2023</h6>
+                        </div>
+                        <textarea id="recent" readonly>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, recusandae aspernatur consequuntur suscipit, deserunt quod minima beatae itaque quisquam nobis quis tempore. Magnam perferendis id natus obcaecati libero sit odit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis eligendi voluptatibus suscipit, ducimus odio, maxime minus modi aliquam cupiditate repellendus ipsam aut, accusamus magnam. Nulla nostrum neque totam sequi provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem corrupti possimus doloribus quibusdam voluptates quidem quas quae quam earum aspernatur unde asperiores animi dolor, pariatur eveniet quos, suscipit at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet laudantium sed beatae in atque ad quas at. Tempora, fuga aliquid perferendis aliquam quo perspiciatis odit vel nam! Quos, magni blanditiis?</textarea>
+                </div>
+                <div class="col-4 m-auto box box-2">
+                    <div></div>
+                    <div class="title-wrapper">
+                        <h1>To do </h1>
+                        <h6>Sept. 19th 2023</h6>
+                    </div>
+                    <ul>
+                        <li>Take out the trash</li>
+                        <li>Study HTML/CSS</li>
+                        <li>Learn Bootstrap</li>
+                        <li>Learn to Roller Skate</li>
+                        <li>Buy Creatine</li>
+                        <li>Get Jacked</li>
+                        <li>list cont...</li>
+                    </ul>
                 </div>
             </div> <!--end row-->
             <div class="row">

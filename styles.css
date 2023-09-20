@@ -1,41 +1,105 @@
 body {
     font-size: 1.2em;
+    color: white !important;
+    background-color: #212529;
 }
 
 .wrapper {
     height: 100vh;
+    overflow-x: hidden !important;
+    width: 100%;
+    position: relative;
 }
 
-  .box {
-    border-width: 4px;
-    border-style: solid;
-    margin: 10px;
-    color: white !important;
+.logo {
+    width: 50px;
+    margin: 5px;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background-image: linear-gradient(to bottom, #212529, rgb(27, 27, 27));
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.main-wrapper > h1 {
+    font-size: 4em;
+}
+
+.box {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    min-height: 300px;
+    background-image: linear-gradient(to bottom right, #222, rgb(27, 27, 27));
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
 }
 
 .box-1  {
-    border-image: linear-gradient(to bottom right, red, purple) 10;
-    min-width: 400px;
+    min-width: 350px;
 }
 
 .box-2 {
-    border-image: linear-gradient(to bottom left, red, purple) 10;
-}
-
-.box-3 {
-    border-image: linear-gradient(to top right, red, purple) 10;
-}
-
-.box-4 {
-    border-image: linear-gradient(to top left, red, purple) 10;
+    min-width: 350px;
+    
 }
 
 .title-wrapper {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    /* border-bottom: solid 1px white; */
-    border-bottom-style: solid;
-    border-image: linear-gradient(to right, red, purple) 100;
     margin: 7px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, #0d6efd, #0d0dff) 10;
+    border-width: 3px;
 }
+
+#main-text {
+    color: #0d6efd;
+    background-size: 100%;
+}
+
+#recent {
+    width: 100%;
+    background: none;
+    min-height: 220px;
+    color: white;
+    border: none;
+    scrollbar-width: auto;
+    scrollbar-color: #0d0fff #ffffff;
+    resize: none;
+}
+
+#recent:focus {
+    border: none;
+}
+
+  #recent::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #recent::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  #recent::-webkit-scrollbar-thumb {
+    background-color: #0d0fff;
+    border-radius: 10px;
+  }
+
+
+
